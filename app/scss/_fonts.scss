@@ -1,0 +1,4 @@
+@import "_mixins/font-face";
+
+@include font-face("Source Code Pro Black", "../fonts/SourceCodePro/SourceCodePro-Black", bold);
+@include font-face("Source Code Pro Light", "../fonts/SourceCodePro/SourceCodePro-Light", light);
