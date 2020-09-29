@@ -1,6 +1,10 @@
-$default-font: "Source Code Pro Light", monospace;
-$accent: orange;
-$text: #333;
+$default-font: "Prompt", monospace;
+
+$bg-color: #fafafa;
+$text: rgba(30, 30, 30, 1);
+$accent-blue: rgba(45, 165, 233, 1);
+$btn-bg-color: rgba(231, 76, 60, 1);
+$btn-bg-hover-color: rgba(224, 57, 39, 1);
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;
@@ -9,3 +13,6 @@ $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
 
 $gutter: $grid-gutter-width;
+
+$transition: 0.2s ease;
+$advantages-grid-item-border-color: rgba(196, 196, 196, 1);
