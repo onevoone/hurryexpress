@@ -83,11 +83,13 @@ h3 {
 	height: 100%;
 	min-height: 100vh;
 	background: linear-gradient(180deg, #56C2FF 0%, #0085D0 100%);
+	z-index: 1;
 
 	.plain-img {
 		position: absolute;
 		top: 12%;
 		right: 0;
+		z-index: -1;
 	}
 }
 

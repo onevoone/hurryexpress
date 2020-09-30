@@ -1,11 +1,24 @@
 var $trackForm = $('#track-form');
 
 
-function makeRequst(data) {
+function makeSuccessfulRequest(data) {
 	$.ajax({
 		type: 'GET',
 		dataType: 'json',
-		url: '/response.json',
+		url: '/success.json',
+		data : JSON.stringify(data),
+		success: function(data) {
+			alert(data.response);
+		}  
+	});
+}
+
+
+function makeFailedRequest(data) {
+	$.ajax({
+		type: 'GET',
+		dataType: 'json',
+		url: '/error.json',
 		data : JSON.stringify(data),
 		success: function(data) {
 			alert(data.response);
@@ -19,7 +32,11 @@ if ($trackForm.length > 0) {
 		if (event) event.preventDefault()
 
 		var form_values = $trackForm.serializeArray();
-		makeRequst({ trackNumber: form_values[0].value });
 
+		if (form_values[0].value.length > 0) {
+			makeSuccessfulRequest({ trackNumber: form_values[0].value });
+		} else {
+			makeFailedRequest()
+		}
 	})
 }
