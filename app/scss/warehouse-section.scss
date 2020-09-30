@@ -1,0 +1,53 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "_mixins/font-size";
+
+.warehouse-section {
+	margin-top: 120px;
+	margin-bottom: 221px;
+
+
+	.warehouse_forklift-img {
+		height: 466px;
+		width: 555px;
+		display: block;
+		object-fit: cover;
+	}
+
+
+	.warehouse_description-wrapper {
+		margin-left: 72px;
+
+
+		.section-title {
+			margin-bottom: 15px;
+			@include font-size(40, 50);
+		}
+
+		.warehouse_description {
+			margin: 0;
+			margin-top: 9px;
+			@include font-size(18, 27);
+		}
+	}
+
+
+	.warehouse_additional-info {
+		margin-top: 150px;
+
+
+		.warehouse_info-block {
+			h3 {
+				margin-bottom: 20px;
+				@include font-size(24, 36);
+				font-weight: 600;
+			}
+
+			p {
+				margin: 0;
+				@include font-size(18, 27);
+			}
+		}
+	}
+}

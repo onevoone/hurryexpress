@@ -1,0 +1,33 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "_mixins/font-size";
+
+.header {
+    .nav {
+        padding: 37px 0;
+        display: flex;
+    
+        .nav_menu {
+            margin: 0;
+            margin-left: auto;
+            padding: 0;
+    
+            display: flex;
+            align-items: center;
+        
+            .nav_menu-item {
+                list-style: none;
+    
+                &:not(:first-child) {
+                    margin-left: 39px;
+                }
+    
+                .nav_menu-link {
+                    @include font-size(16, 24);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

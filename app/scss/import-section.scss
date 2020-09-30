@@ -1,0 +1,56 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "_mixins/font-size";
+
+.import-section {
+	margin-top: 115px;
+
+
+	.import_description {
+		position: relative;
+		height: 653px;
+		margin-left: 84px;
+
+		.import_woman-img {
+			height: auto;
+			width: 548px;
+			display: block;
+			object-fit: cover;
+		}
+
+		.import_text {
+			margin-top: 50px;
+			@include font-size(18, 27);
+			color: #fff;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 203px;
+			left: -84px;
+			height: 450px;
+			width: 725px;
+			background-color: $accent-blue;
+			z-index: -1;
+		}
+	}
+	
+
+	.import_main {
+
+		.section-title {
+			max-width: 170px;
+			@include font-size(40, 50);
+		}
+
+		.import_worker-img {
+			height: auto;
+			width: 432px;
+			margin-top: 70px;
+			display: block;
+			object-fit: cover;
+		}
+	}
+}
